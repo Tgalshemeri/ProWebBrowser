@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Tabs"
+        android:id="@+id/showTab"
+        android:icon="@drawable/outline_tab_black_24"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:showAsAction="always"/>
+    <item android:title="Add New Tab"
+        android:id="@+id/addBtn"
+        android:icon="@drawable/outline_add_box_black_24"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:showAsAction="always"/>
+
+</menu>

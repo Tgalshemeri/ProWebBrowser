@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HomePage"
+        android:id="@+id/homePage"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/outline_home_black_36"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:textSize="20dp"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Bookmarks"
+    android:drawablePadding="5dp"
+    android:id="@+id/bookmarkActivity"
+    android:textColor="#000"
+    android:drawableLeft="@drawable/outline_favorite_black_36"
+    android:padding="10dp"
+    android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:padding="10dp"
+        android:id="@+id/historyActivity"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/outline_history_black_36"
+        android:textColor="#000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Find On Page"
+        android:padding="10dp"
+        android:id="@+id/findOnPage"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/outline_find_in_page_black_36"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Desktop Site"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/baseline_computer_black_36"
+            android:id="@+id/request"
+            android:textSize="20dp" android:textColor="#000"/>
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/requestSwitch"
+            android:theme="@style/SCBSwitch"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saving History"
+            android:id="@+id/savingHistory"
+            android:textSize="20dp"
+            android:textColor="#000"/>
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/savingSwitch"
+            android:theme="@style/SCBSwitch"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:id="@+id/about"
+        android:padding="10dp"
+        android:textSize="20dp" android:textColor="#000"/>
+</LinearLayout>

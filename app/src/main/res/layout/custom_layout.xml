@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/appBar"
+
+        >
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#F2F2F2"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <com.cielyang.android.clearableedittext.ClearableEditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/editUrl"
+                android:inputType="text"
+                android:layout_gravity="top"
+                android:background="#fff"
+                android:nextFocusUp="@id/editUrl"
+                android:nextFocusLeft="@id/editUrl"
+                android:focusableInTouchMode="true"
+                android:elevation="2dp"
+                android:textColor="#000"
+                app:clearIconDrawWhenFocused="true"
+                android:imeOptions="actionDone"/>
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+<android.support.v4.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/swipeRefresh"
+    android:layout_marginTop="20dp"
+    >
+
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/webView"
+            tools:ignore="WebViewLayout" />
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:itemBackground="@color/white"
+        app:itemIconTint="#000"
+        app:itemTextColor="#000"
+        app:layout_behavior=".Utils.BottomNavigationBehavior"
+        app:menu="@menu/bottom_menu"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout"
+        android:visibility="gone"
+        android:background="#000"/>
+</android.support.design.widget.CoordinatorLayout>

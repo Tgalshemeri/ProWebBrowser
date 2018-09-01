@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="If there is an issue or you have a question. Please email us :
+"
+        android:padding="10dp"
+        android:id="@+id/aboutText"
+        android:textSize="20dp" android:textColor="#000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:clickable="true"
+        android:padding="10dp"
+        android:id="@+id/textEmail"
+        android:text="treafalshamari@gmail.com"/>
+</LinearLayout>

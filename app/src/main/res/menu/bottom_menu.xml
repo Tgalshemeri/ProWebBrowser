@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Back"
+        android:id="@+id/backBtn"
+        android:icon="@drawable/round_arrow_back_black_18"/>
+    <item android:title="Forward"
+        android:id="@+id/forwardBtn"
+        android:icon="@drawable/round_arrow_forward_black_18"/>
+    <item android:title="Bookmark"
+        android:id="@+id/bookmarkBtn"
+        android:icon="@drawable/baseline_bookmark_border_black_18dp"/>
+    <item android:title="Settings"
+        android:id="@+id/settingsBtn"
+        android:icon="@drawable/round_menu_black_18"/>
+</menu>
