@@ -1,5 +1,5 @@
 # ProWebBrowser
-
+You can support by buying me a coffee [Support Me](https://www.buymeacoffee.com/talsh)
 
 
 Easy Tabbed Web Browser
